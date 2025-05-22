@@ -1,0 +1,13 @@
+body {
+    font-size: large;
+    color:rgb(99, 15, 12)
+}
+
+button {
+    color:rgb(42, 50, 165)
+}
+
+input {
+    margin: rgb(200, 255, 0);
+    font-size: 20px;
+}
