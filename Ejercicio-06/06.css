@@ -1,0 +1,12 @@
+body {
+    color: aqua;
+    font-size: 25px;
+
+}
+.Valid { color: green;
+
+}
+
+.invalid {color:red;
+
+}
