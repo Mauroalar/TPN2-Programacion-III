@@ -1,14 +1,16 @@
 // Función auxiliar para seleccionar elementos por ID
 function $(id) {
   return document.getElementById(id);
-}
+};
 
-function validarForm() {
+boton.addEventListener("click", () => {
+
     let nombre = $("nombre").value.trim();
     let apellido = $("apellido").value.trim();
     let edad = Number($("edad").value.trim());
     let altura = Number($("altura").value.trim());
     let email = $("email").value.trim();
+    let boton = $("boton");
 
     let mensaje = $("mensaje");
 
@@ -43,10 +45,5 @@ function validarForm() {
         mensaje.innerHTML = "Todas las validaciones son correctas";
         mensaje.className = "Valid";
     }
-}
 
-// Asocia el evento submit para llamar a validarForm() y prevenir la recarga
-document.getElementById("formulario").addEventListener("submit", function(e) {
-    e.preventDefault(); // evitar el envío por defecto
-    validarForm(); // llamar a tu función de validación
 });
